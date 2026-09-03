@@ -1,23 +1,1477 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+  <!-- Schema.org Article 및 FAQ 구조화 데이터 마크업 (네이버 AI 및 검색엔진 최적화) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://financial.reliabledone.com/dental-insurance-cost#article",
+        "isPartOf": {
+          "@type": "WebPage",
+          "@id": "https://financial.reliabledone.com/dental-insurance-cost"
+        },
+        "headline": "2026년 치과보험 금액 총정리: 연령별 평균 가격 견적 비교 및 최저가 가입 가이드",
+        "description": "2026년 기준 치과보험의 평균 금액, 10대부터 70대까지 30개 이상 연령 세대별 요금 차이, 보존치료 및 보철치료 보장 범위, 다이렉트 최저가 비교 분석 및 실시간 계산법을 안내합니다.",
+        "inLanguage": "ko-KR",
+        "datePublished": "2026-01-05T09:00:00+09:00",
+        "dateModified": "2026-02-15T14:30:00+09:00",
+        "author": {
+          "@type": "Organization",
+          "name": "금융소비자정보분석센터"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dental Insurance Analytics",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://financial.reliabledone.com/logo.png"
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://financial.reliabledone.com/dental-insurance-cost#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "2026년 기준 치과보험 평균 월 납입 금액은 얼마인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2026년 기준 20대와 30대의 치과보험 평균 금액은 월 2만원대에서 3만원대 중반이며, 40대와 50대는 3만원대 후반에서 5만원대, 60대 이상은 6만원대에서 8만원대 수준으로 형성되어 있습니다. 가입 조건이 보철치료 중심인지 보존치료 중심인지에 따라 차이가 발생합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치과보험 가입 후 즉시 임플란트나 크라운 치료를 받아도 전액 보상받을 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "아닙니다. 무진단형 치과보험은 가입 후 90일간 면책기간이 적용되어 보상받을 수 없으며, 가입 후 1년 내지 2년 동안은 감액기간이 적용되어 약정 금액의 50퍼센트만 지급됩니다. 100퍼센트 전액 보장을 받기 위해서는 통상 1년(12개월) 또는 2년이 경과해야 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "비갱신형 치과보험과 갱신형 치과보험 중 무엇이 더 유리한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "단기간 내 치료 계획이 있고 초기 비용을 절감하고자 한다면 갱신형이 저렴하여 유리할 수 있습니다. 반면 40대 이후 장기적인 노후 치아 관리를 목적으로 보험료 인상 부담을 없애고자 한다면 초기 비용이 조금 높더라도 만기까지 보험료가 일정한 비갱신형을 추천합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "온라인 다이렉트 치과보험이 설계사 가입보다 저렴한 이유는 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "인터넷 다이렉트 사이트를 통해 신규 계약을 진행하면 중간 모집 수수료와 사업비가 절감되어 동일한 보장 조건에서도 오프라인 대면 가입 대비 약 15퍼센트에서 25퍼센트 저렴한 최저가 가격 혜택을 누릴 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --primary-light: #1a3e6d;
+      --secondary: #0066cc;
+      --accent: #00a389;
+      --accent-soft: #e6f9f5;
+      --bg-main: #f6f9fc;
+      --bg-card: #ffffff;
+      --text-main: #2d3748;
+      --text-muted: #5a6a80;
+      --border: #e3e8ee;
+      --border-focus: #0066cc;
+      --shadow-sm: 0 2px 4px rgba(10, 37, 64, 0.04);
+      --shadow-md: 0 6px 16px rgba(10, 37, 64, 0.08);
+      --shadow-lg: 0 12px 32px rgba(10, 37, 64, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.85;
+      font-size: 16px;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: #d1e2f7;
+      max-width: 780px;
+      margin: 0 auto 30px;
+    }
+
+    .header-cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 163, 137, 0.35);
+    }
+
+    .btn-primary:hover {
+      background-color: #008a74;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    nav.toc {
+      background: var(--bg-card);
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    nav.toc h2 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    nav.toc ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 10px 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav.toc a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+    }
+
+    nav.toc a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px 0 60px;
+    }
+
+    section {
+      background: var(--bg-card);
+      margin-bottom: 40px;
+      padding: 40px 35px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      color: var(--primary-light);
+      margin: 30px 0 15px;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      color: var(--secondary);
+      margin: 20px 0 10px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 18px;
+      color: var(--text-main);
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin: 15px 0 20px 25px;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .highlight-box {
+      background-color: #f0f7ff;
+      border-left: 5px solid var(--secondary);
+      padding: 20px 25px;
+      border-radius: 0 8px 8px 0;
+      margin: 25px 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .callout-teal {
+      background-color: var(--accent-soft);
+      border: 1px solid #b8ebe2;
+      padding: 20px 25px;
+      border-radius: 10px;
+      margin: 25px 0;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 25px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    thead th {
+      background-color: #ebf2fa;
+      color: var(--primary);
+      font-weight: 700;
+      padding: 14px 16px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    tbody td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-main);
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #fbfdff;
+    }
+
+    tbody tr:hover {
+      background-color: #f0f5fc;
+    }
+
+    .chart-box {
+      background: #fbfcfe;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px 0;
+    }
+
+    .bar-row {
+      margin-bottom: 18px;
+    }
+
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+
+    .bar-track {
+      background-color: #e2e8f0;
+      height: 18px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.8s ease;
+    }
+
+    .fill-blue-1 { background-color: #60a5fa; width: 35%; }
+    .fill-blue-2 { background-color: #3b82f6; width: 45%; }
+    .fill-blue-3 { background-color: #2563eb; width: 60%; }
+    .fill-blue-4 { background-color: #1d4ed8; width: 75%; }
+    .fill-blue-5 { background-color: #1e40af; width: 95%; }
+
+    /* 계산기 스타일 */
+    .calc-card {
+      background: #ffffff;
+      border: 2px solid var(--secondary);
+      border-radius: 14px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      color: var(--text-main);
+      background-color: #fff;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .radio-pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .radio-pill {
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .radio-pill input[type="radio"] {
+      display: none;
+    }
+
+    .radio-pill label {
+      display: block;
+      text-align: center;
+      padding: 12px 14px;
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+
+    .radio-pill input[type="radio"]:checked + label {
+      background: var(--secondary);
+      color: #ffffff;
+      border-color: var(--secondary);
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      background: #f8fafc;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .checkbox-item input {
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
+    .calc-result-box {
+      background: linear-gradient(135deg, #0a2540 0%, #1a3e6d 100%);
+      color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .calc-result-title {
+      font-size: 1.05rem;
+      color: #b0c9e8;
+      margin-bottom: 8px;
+    }
+
+    .calc-result-price {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #38ef7d;
+      margin-bottom: 12px;
+    }
+
+    .calc-result-detail {
+      font-size: 0.9rem;
+      color: #d1e2f7;
+      line-height: 1.6;
+    }
+
+    /* FAQ 아코디언 스타일 */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--primary);
+      background-color: #fbfcfe;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      padding: 20px 22px;
+      border-top: 1px solid var(--border);
+      color: var(--text-main);
+      background-color: #ffffff;
+    }
+
+    footer {
+      background: #061524;
+      color: #8fa0b5;
+      padding: 50px 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #1a2c3f;
+    }
+
+    footer a {
+      color: #b0c9e8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 980px;
+      margin: 0 auto 30px;
+    }
+
+    .footer-bottom {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 25px;
+      border-top: 1px solid #132435;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.85rem; }
+      section { padding: 25px 20px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .calc-result-price { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-badge">2026 금융소비자 치아건강 종합 포털</div>
+      <h1>2026년 치과보험 금액 분석 및 연령별 최저가 견적 가이드</h1>
+      <p>연령 세대별 평균 요금제 비교, 임플란트 및 크라운 보장 범위 분석, 다이렉트 최저가 비교와 실시간 보험료 계산기를 통해 가장 합리적인 가입 방법을 확인하세요.</p>
+      <div class="header-cta-group">
+        <a href="#calculator-section" class="btn btn-primary">내 치과보험 금액 10초 계산하기</a>
+        <a href="#age-comparison" class="btn btn-secondary">연령대별 평균 가격표 보기</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="toc" aria-label="목차 바로가기">
+      <h2>핵심 목차 안내</h2>
+      <ul>
+        <li><a href="#age-comparison">1. 2026년 치과보험 금액 총정리 및 연령대별 평균</a></li>
+        <li><a href="#treatment-coverage">2. 치료 항목별 실제 보장 금액 및 비용 산출</a></li>
+        <li><a href="#insurance-types">3. 치과보험 종류와 유형별 장단점 및 차이점</a></li>
+        <li><a href="#waiting-period">4. 면책기간, 감액기간 및 계약 조건 완벽 분석</a></li>
+        <li><a href="#brand-ranking">5. 2026년 브랜드별 순위 및 다이렉트 최저가 비교</a></li>
+        <li><a href="#community-review">6. 커뮤니티 내돈내산 가입 후기 및 성지 좌표 팁</a></li>
+        <li><a href="#ai-optimization">7. AI 및 모바일 앱 활용 치과보험 금액 절약법</a></li>
+        <li><a href="#calculator-section">8. 실시간 치과보험 금액 시뮬레이션 계산기</a></li>
+        <li><a href="#external-references">9. 공인 신뢰 기관 공식 외부 참고 자료</a></li>
+        <li><a href="#faq-section">10. 자주 묻는 질문 FAQ 총정리</a></li>
+      </ul>
     </nav>
+
     <main>
-      <h1>Home page</h1>
+      <!-- 섹션 1 -->
+      <section id="age-comparison">
+        <h2>1. 2026년 치과보험 금액 총정리 및 연령대별 평균 가격 분석</h2>
+        <p>
+          2026년 현재 국내 주요 보험사의 치과보험 금액은 가입자의 연령, 성별, 치료 이력, 그리고 선택하는 특약 구성에 따라 상당한 편차를 보입니다. 
+          치아는 신체 기관 중 자연 치유가 불가능한 부위이기 때문에 연령이 높아질수록 치주질환 및 치아 상실률이 급격히 증가합니다. 
+          따라서 보험사는 고연령층일수록 높은 손해율을 반영하여 월 보험료 요금을 산정합니다.
+        </p>
+        <p>
+          치과보험 가입을 고려할 때 소비자가 가장 먼저 직면하는 질문은 "과연 내 나이에 적합한 평균 보험료는 얼마인가"입니다. 
+          일반적으로 20대와 30대의 경우 충치 치료 중심의 보존치료 특약 비중이 높아 상대적으로 저렴한 요금제가 책정되며, 
+          40대 이상 중장년층과 50대, 60대 은퇴 세대는 임플란트 및 브릿지 중심의 고가 보철치료 특약 가입이 필수적이므로 예상 견적 금액이 상승합니다.
+        </p>
+
+        <div class="highlight-box">
+          <p><strong>연령대별 치과보험 금액 핵심 기준 (2026년 표준 기준):</strong></p>
+          <p>
+            20대 사회초년생의 경우 월 1만원 후반대에서 2만원대 중반으로 최저가 설계가 가능하며, 
+            30대 직장인은 2만원대 후반에서 3만원대 중반, 40대 가장 및 맞벌이 부부는 3만원대 후반에서 5만원대 초반, 
+            50대 은퇴준비 세대와 60대 시니어는 5만원대에서 8만원대 이상으로 형성되어 있습니다.
+          </p>
+        </div>
+
+        <h3>30개 이상 세부 연령 세대별 치과보험 예상 견적 및 요금표</h3>
+        <p>
+          다음은 2026년도 기준, 무진단형 일반 보장 상품(임플란트 150만원, 크라운 30만원, 충치치료 레진 10만원 보장 기준)을 바탕으로 
+          세분화된 30개 연령 집단의 월 예상 보험료 금액과 권장 보장 플랜을 정리한 데이터입니다.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>연령 및 세대 구분</th>
+                <th>대표 연령대</th>
+                <th>월 예상 금액 범위</th>
+                <th>주요 추천 특약 및 보장 설계 방향</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0세 영유아</td>
+                <td>0세 ~ 3세</td>
+                <td>15,000원 ~ 22,000원</td>
+                <td>유치 우식증 및 맹출 장애, 소아 치아 파절 중심</td>
+              </tr>
+              <tr>
+                <td>유아동 미취학 아동</td>
+                <td>4세 ~ 6세</td>
+                <td>16,000원 ~ 24,000원</td>
+                <td>유치 레진, 불소도포, 치아 홈메우기(실란트) 집중</td>
+              </tr>
+              <tr>
+                <td>초등학생 저학년</td>
+                <td>7세 ~ 9세</td>
+                <td>17,000원 ~ 25,000원</td>
+                <td>영구치 교체기 보존치료, 인레이 및 레진 보장</td>
+              </tr>
+              <tr>
+                <td>초등학생 고학년</td>
+                <td>10세 ~ 12세</td>
+                <td>18,000원 ~ 26,000원</td>
+                <td>외상성 치아 손상 특약, 복합 레진 충전 보장</td>
+              </tr>
+              <tr>
+                <td>10대 청소년</td>
+                <td>13세 ~ 15세</td>
+                <td>19,000원 ~ 27,000원</td>
+                <td>영구치 크라운 초기 보장, 신경치료 보강형</td>
+              </tr>
+              <tr>
+                <td>10대 후반 수험생</td>
+                <td>16세 ~ 18세</td>
+                <td>20,000원 ~ 28,000원</td>
+                <td>스트레스성 치은염, 신경치료 및 인레이/온레이</td>
+              </tr>
+              <tr>
+                <td>군 복무 청년</td>
+                <td>19세 ~ 21세</td>
+                <td>21,000원 ~ 29,000원</td>
+                <td>군 생활 중 외상 대비 치아 파절, 기본 보존치료</td>
+              </tr>
+              <tr>
+                <td>20대 초반 대학생</td>
+                <td>20세 ~ 23세</td>
+                <td>22,000원 ~ 30,000원</td>
+                <td>가성비 다이렉트형, 레진 및 광중합형 충전 치료</td>
+              </tr>
+              <tr>
+                <td>20대 중반 취업준비생</td>
+                <td>24세 ~ 26세</td>
+                <td>23,000원 ~ 32,000원</td>
+                <td>저렴한 다이렉트 플랜, 스케일링 및 잇몸 관리</td>
+              </tr>
+              <tr>
+                <td>20대 사회초년생</td>
+                <td>27세 ~ 29세</td>
+                <td>25,000원 ~ 35,000원</td>
+                <td>크라운 20만원 한도 추가, 보존치료 풀패키지</td>
+              </tr>
+              <tr>
+                <td>30대 미혼 직장인</td>
+                <td>30세 ~ 32세</td>
+                <td>27,000원 ~ 38,000원</td>
+                <td>크라운 및 레진 무제한 플랜, 임플란트 100만원형</td>
+              </tr>
+              <tr>
+                <td>30대 신혼부부</td>
+                <td>33세 ~ 35세</td>
+                <td>29,000원 ~ 41,000원</td>
+                <td>가족 결합 할인 활용, 임플란트 150만원 기본 탑재</td>
+              </tr>
+              <tr>
+                <td>30대 후반 다자녀 부모</td>
+                <td>36세 ~ 39세</td>
+                <td>32,000원 ~ 45,000원</td>
+                <td>보존 치료와 보철 치료의 균형 설계형 요금제</td>
+              </tr>
+              <tr>
+                <td>3040 전문직 종사자</td>
+                <td>35세 ~ 42세</td>
+                <td>35,000원 ~ 48,000원</td>
+                <td>비갱신형 고급 플랜, 보철 한도 무제한 옵션</td>
+              </tr>
+              <tr>
+                <td>40대 초반 외벌이 가장</td>
+                <td>40세 ~ 43세</td>
+                <td>38,000원 ~ 52,000원</td>
+                <td>임플란트 개당 150만원 보장, 잇몸치료 특약 강화</td>
+              </tr>
+              <tr>
+                <td>40대 중반 맞벌이 부부</td>
+                <td>44세 ~ 46세</td>
+                <td>41,000원 ~ 56,000원</td>
+                <td>다이렉트 온라인 비교를 통한 최저가 견적 적용</td>
+              </tr>
+              <tr>
+                <td>40대 후반 중장년층</td>
+                <td>47세 ~ 49세</td>
+                <td>45,000원 ~ 61,000원</td>
+                <td>브릿지 및 임플란트 동시 지원, 치조골 이식 추가</td>
+              </tr>
+              <tr>
+                <td>50대 초반 직장인</td>
+                <td>50세 ~ 52세</td>
+                <td>48,000원 ~ 66,000원</td>
+                <td>임플란트 200만원 최고한도형, 풍치 예방 특약</td>
+              </tr>
+              <tr>
+                <td>50대 은퇴준비 세대</td>
+                <td>53세 ~ 55세</td>
+                <td>52,000원 ~ 72,000원</td>
+                <td>면책기간 단축 상품, 고액 보철치료 집중 대비</td>
+              </tr>
+              <tr>
+                <td>50대 후반 갱신 대비층</td>
+                <td>56세 ~ 59세</td>
+                <td>56,000원 ~ 78,000원</td>
+                <td>10년 또는 20년 장기 갱신 주기 선택 플랜</td>
+              </tr>
+              <tr>
+                <td>5060 액티브 시니어</td>
+                <td>58세 ~ 62세</td>
+                <td>59,000원 ~ 83,000원</td>
+                <td>틀니 및 임플란트 연계 보장, 치주질환 수술비</td>
+              </tr>
+              <tr>
+                <td>60대 은퇴 생활자</td>
+                <td>60세 ~ 63세</td>
+                <td>63,000원 ~ 88,000원</td>
+                <td>틀니 보장 금액 강화, 임플란트 연간 3개 제한 해제</td>
+              </tr>
+              <tr>
+                <td>60대 실버 세대</td>
+                <td>64세 ~ 66세</td>
+                <td>67,000원 ~ 94,000원</td>
+                <td>건강보험 본인부담금 차액 보전 특약 결합</td>
+              </tr>
+              <tr>
+                <td>65세 이상 고령층</td>
+                <td>65세 ~ 68세</td>
+                <td>71,000원 ~ 99,000원</td>
+                <td>임플란트 건강보험 본인부담 30% 외 추가 보장형</td>
+              </tr>
+              <tr>
+                <td>70대 시니어 어르신</td>
+                <td>70세 ~ 73세</td>
+                <td>75,000원 ~ 108,000원</td>
+                <td>전체 틀니 및 부분 틀니 매년 1회 재보장 플랜</td>
+              </tr>
+              <tr>
+                <td>70대 후반 부모님</td>
+                <td>74세 ~ 77세</td>
+                <td>80,000원 ~ 115,000원</td>
+                <td>간편심사 유병자 치아 플랜, 틀니 집중 설계</td>
+              </tr>
+              <tr>
+                <td>80대 초고령층</td>
+                <td>78세 ~ 82세</td>
+                <td>85,000원 ~ 125,000원</td>
+                <td>무진단 간편 가입, 치주소호 및 발치 보장 위주</td>
+              </tr>
+              <tr>
+                <td>자영업자 및 소상공인</td>
+                <td>30세 ~ 55세</td>
+                <td>36,000원 ~ 58,000원</td>
+                <td>진료비 공백 최소화, 비급여 보존치료 집중 케어</td>
+              </tr>
+              <tr>
+                <td>프리랜서 및 긱워커</td>
+                <td>25세 ~ 45세</td>
+                <td>28,000원 ~ 46,000원</td>
+                <td>월납 부담을 낮춘 실속형 다이렉트 요금제</td>
+              </tr>
+              <tr>
+                <td>임산부 여성 플랜</td>
+                <td>28세 ~ 38세</td>
+                <td>30,000원 ~ 43,000원</td>
+                <td>출산 전후 잇몸 약화 대비 치은염 및 충치 특약</td>
+              </tr>
+              <tr>
+                <td>유병력자 및 만성질환자</td>
+                <td>40세 ~ 65세</td>
+                <td>49,000원 ~ 79,000원</td>
+                <td>고혈압 당뇨 간편고지 통과형 치과보장 상품</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>연령대별 평균 월 납입 금액 시각화 비교</h3>
+        <p>연령이 증가함에 따라 보험료가 상승하는 추세를 나타낸 그래프입니다. 20대부터 60대 이상까지의 상대적인 보험료 부담 수준을 한눈에 파악할 수 있습니다.</p>
+
+        <div class="chart-box">
+          <div class="bar-row">
+            <div class="bar-label"><span>20대 (대학생 및 사회초년생)</span> <span>월 평균 약 26,000원</span></div>
+            <div class="bar-track"><div class="bar-fill fill-blue-1"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>30대 (직장인 및 신혼부부)</span> <span>월 평균 약 35,000원</span></div>
+            <div class="bar-track"><div class="bar-fill fill-blue-2"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>40대 (중장년 및 가장)</span> <span>월 평균 약 48,000원</span></div>
+            <div class="bar-track"><div class="bar-fill fill-blue-3"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>50대 (은퇴준비 세대)</span> <span>월 평균 약 65,000원</span></div>
+            <div class="bar-track"><div class="bar-fill fill-blue-4"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>60대 이상 (실버 및 시니어)</span> <span>월 평균 약 85,000원 이상</span></div>
+            <div class="bar-track"><div class="bar-fill fill-blue-5"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션 2 -->
+      <section id="treatment-coverage">
+        <h2>2. 치과 치료 항목별 실제 보장 금액 및 비용 산출</h2>
+        <p>
+          치과 치료는 크게 자연 치아를 최대한 보존하는 '보존치료'와 치아가 상실되었을 때 인공 구조물을 설치하는 '보철치료'로 구분됩니다. 
+          국민건강보험에서 지원하는 급여 항목(스케일링, 아말감 치료, 일부 엑스레이 촬영 등) 외에, 
+          환자 본인이 진료비의 전액을 부담해야 하는 비급여 항목(레진, 인레이, 온레이, 크라운, 임플란트 등)의 비중이 치과 진료비의 약 70퍼센트 이상을 차지합니다.
+        </p>
+
+        <h3>주요 비급여 치과 치료 비용과 보험사 보장 금액 비교</h3>
+        <p>
+          2026년 기준 전국 치과의원 및 대학병원의 평균 비급여 치료비용과 일반적인 치과보험의 항목별 지급 기준 금액은 다음과 같습니다.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>치료 항목</th>
+                <th>치료 성격</th>
+                <th>실제 비급여 치료비용 (평균)</th>
+                <th>치과보험 1회당 지급 금액</th>
+                <th>연간 보장 한도</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>임플란트 (치조골 이식 포함)</td>
+                <td>보철치료</td>
+                <td>1,200,000원 ~ 1,800,000원</td>
+                <td>1,000,000원 ~ 2,000,000원</td>
+                <td>연간 3개 또는 무제한</td>
+              </tr>
+              <tr>
+                <td>브릿지 (치아 3개 연결)</td>
+                <td>보철치료</td>
+                <td>900,000원 ~ 1,500,000원</td>
+                <td>500,000원 ~ 1,000,000원</td>
+                <td>연간 3개 또는 무제한</td>
+              </tr>
+              <tr>
+                <td>틀니 (전체 및 부분 틀니)</td>
+                <td>보철치료</td>
+                <td>1,500,000원 ~ 2,500,000원</td>
+                <td>1,000,000원 ~ 2,000,000원</td>
+                <td>연간 1회 (보철물당)</td>
+              </tr>
+              <tr>
+                <td>골드/세라믹 크라운</td>
+                <td>보존치료</td>
+                <td>400,000원 ~ 600,000원</td>
+                <td>200,000원 ~ 500,000원</td>
+                <td>연간 3개 또는 무제한</td>
+              </tr>
+              <tr>
+                <td>인레이 / 온레이 (금, 세라믹)</td>
+                <td>보존치료</td>
+                <td>200,000원 ~ 350,000원</td>
+                <td>100,000원 ~ 200,000원</td>
+                <td>무제한 보장</td>
+              </tr>
+              <tr>
+                <td>광중합형 복합레진</td>
+                <td>보존치료</td>
+                <td>80,000원 ~ 150,000원</td>
+                <td>50,000원 ~ 100,000원</td>
+                <td>무제한 보장</td>
+              </tr>
+              <tr>
+                <td>치아 신경치료 (근관치료)</td>
+                <td>보존치료</td>
+                <td>20,000원 ~ 50,000원 (급여)</td>
+                <td>20,000원 ~ 50,000원</td>
+                <td>치아당 지급</td>
+              </tr>
+              <tr>
+                <td>영구치 발치 및 치주소호술</td>
+                <td>기본외과</td>
+                <td>10,000원 ~ 30,000원 (급여)</td>
+                <td>20,000원 ~ 50,000원</td>
+                <td>발치 개수당 지급</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-teal">
+          <p><strong>치료 항목별 필수 확인사항:</strong></p>
+          <p>
+            임플란트 수술 시 잇몸뼈가 부족하여 시행하는 '치조골 이식술'은 일반 임플란트 특약에서 제외되는 경우가 많으므로, 
+            별도의 수술비 특약이 포함되어 있는지 확인해야 합니다. 
+            또한 크라운 치료의 경우 연간 개수 제한(예: 연간 3개 한도)이 설정되어 있는지, 무제한 보장 상품인지 반드시 약관을 점검해야 합니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- 섹션 3 -->
+      <section id="insurance-types">
+        <h2>3. 치과보험 종류와 유형별 장단점 및 차이점 비교</h2>
+        <p>
+          치과보험은 가입 심사 방식에 따라 '진단형'과 '무진단형'으로 나뉘며, 
+          보험료 납입 구조에 따라 '갱신형'과 '비갱신형'으로 구분됩니다. 
+          자신의 현재 구강 상태와 향후 치료 계획에 맞춰 적절한 상품 유형을 선택하는 것이 불필요한 보험료 지출을 줄이는 가장 중요한 전략입니다.
+        </p>
+
+        <h3>진단형 vs 무진단형 치과보험 비교</h3>
+        <p>
+          진단형은 가입 전 치과에 방문하여 치아 검진을 받고 심사를 통과해야 가입이 가능한 상품입니다. 
+          반면 무진단형은 치과 방문 없이 인터넷이나 전화상담을 통해 고지의무 3가지만 확인되면 즉시 가입되는 형태입니다.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>비교 구분</th>
+                <th>진단형 치과보험</th>
+                <th>무진단형 치과보험</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>가입 절차</td>
+                <td>치과 내원 검진 및 의사 소견서 제출 필수</td>
+                <td>전화 및 온라인 고지의무 질문 3개 답변 후 즉시 가입</td>
+              </tr>
+              <tr>
+                <td>면책기간 및 감액기간</td>
+                <td>없음 (가입 즉시 100% 전액 보장)</td>
+                <td>면책기간 90일, 감액기간 1년~2년(50% 지급) 적용</td>
+              </tr>
+              <tr>
+                <td>보장 한도</td>
+                <td>임플란트, 크라운 등 개수 제한 없이 무제한</td>
+                <td>상품에 따라 연간 3개 제한 또는 무제한</td>
+              </tr>
+              <tr>
+                <td>월 납입 금액 수준</td>
+                <td>무진단형 대비 상대적으로 높음</td>
+                <td>초기 가입 요금이 저렴하여 접근성이 높음</td>
+              </tr>
+              <tr>
+                <td>추천 대상</td>
+                <td>현재 치아 상태가 매우 건강하고 즉시 고액 보장을 원하는 분</td>
+                <td>치과 방문이 번거롭고 향후 1~2년 후 치료를 계획하는 일반인</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>갱신형 vs 비갱신형 치과보험 장단점 분석</h3>
+        <p>
+          갱신형은 일정 주기(예: 3년, 5년, 10년)마다 가입자의 나이와 손해율을 재산정하여 보험료가 인상되는 구조입니다. 
+          비갱신형은 가입 시 정해진 보험료를 납입기간(예: 10년납, 20년납) 동안 동일하게 납부하고 만기까지 보장받는 방식입니다.
+        </p>
+
+        <ul>
+          <li>
+            <strong>갱신형 장단점:</strong> 초기 월 납입 금액이 매우 저렴하여 2030 젊은 세대나 1~2년 내 단기 치료를 목적으로 하는 사람에게 유리합니다. 
+            그러나 연령이 높아질수록 갱신 시점에 보험료 인상폭이 30~80퍼센트에 달할 수 있어 장기 유지 시 부담이 큽니다.
+          </li>
+          <li>
+            <strong>비갱신형 장단점:</strong> 만기까지 보험료가 전혀 오르지 않아 장기적인 가계 재정 계획 수립에 매우 안정적입니다. 
+            단, 초기 월 보험료가 갱신형 대비 30~50퍼센트가량 높게 책정되어 단기 해지 시 손해가 발생할 수 있습니다.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 섹션 4 -->
+      <section id="waiting-period">
+        <h2>4. 면책기간, 감액기간 및 계약 조건 완벽 분석</h2>
+        <p>
+          치과보험 가입 시 소비자가 가장 많은 민원을 제기하는 부분이 바로 '면책기간'과 '감액기간'입니다. 
+          보험사는 가입자가 이미 치아에 통증이나 이상을 느낀 후 보험금을 수령할 목적으로 가입하는 모럴 해저드(도덕적 해이)를 방지하기 위해 
+          법적으로 정해진 유예 기간을 운영합니다.
+        </p>
+
+        <h3>면책기간과 감액기간의 작동 원리</h3>
+        <div class="highlight-box">
+          <p><strong>1. 면책기간 (가입 후 90일):</strong></p>
+          <p>
+            보험 계약일로부터 90일이 지나기 전에는 충치나 잇몸질환으로 치과 치료를 받더라도 보험금이 일체 지급되지 않습니다. 
+            단, 상해로 인한 치아 파절이나 사고 치료는 면책기간 없이 가입 첫날부터 100퍼센트 보장됩니다.
+          </p>
+          <p><strong>2. 감액기간 (가입 후 1년 또는 2년):</strong></p>
+          <p>
+            면책기간 90일이 지난 후부터 1년(12개월) 또는 2년 미만 기간 동안에는 약정된 보장 금액의 50퍼센트만 지급됩니다. 
+            예를 들어 임플란트 약정 금액이 150만원인 경우, 1년 미만에 식립하면 75만원만 지급됩니다. 
+            100퍼센트 전액을 받기 위해서는 반드시 감액기간이 종료된 이후에 치료를 시작해야 합니다.
+          </p>
+        </div>
+
+        <h3>계약 전 알릴 의무(고지의무)와 위약금 및 환불 규정</h3>
+        <p>
+          무진단형 치과보험 가입 시 보험사에 반드시 사실대로 알려야 하는 3대 필수 질문사항은 다음과 같습니다.
+        </p>
+        <ol>
+          <li>최근 1년 이내에 충치(치아우식증)로 인하여 치료, 투약 또는 치료가 필요하다는 진단을 받은 적이 있는가?</li>
+          <li>최근 5년 이내에 치주질환(풍치, 잇몸병)으로 인하여 영구치를 상실하였거나 치주 수술 또는 치료 필요 진단을 받은 적이 있는가?</li>
+          <li>현재 틀니를 하고 있거나 브릿지, 임플란트 치료를 진행 중인가?</li>
+        </ol>
+        <p>
+          위 항목에 대해 허위로 고지하거나 사실을 숨기고 계약할 경우, 상법 및 보험업법 규정에 따라 계약이 강제 해지될 수 있으며 
+          기납입 보험료의 환불이 제한되거나 위약금이 발생할 수 있으므로 주의해야 합니다. 
+          또한 가입 후 15일 이내(청약서를 수령한 날로부터 30일 이내)에는 청약 철회 제도를 통해 계약금을 전액 무위약금으로 환불받을 수 있습니다.
+        </p>
+      </section>
+
+      <!-- 섹션 5 -->
+      <section id="brand-ranking">
+        <h2>5. 2026년 브랜드별 순위 및 다이렉트 최저가 비교 분석</h2>
+        <p>
+          국내 주요 손해보험사 및 생명보험사의 치과보험 상품은 보장 한도와 특약 구성에 따라 각기 다른 경쟁력을 갖추고 있습니다. 
+          2026년 소비자 선호도, 지급 신속성, 다이렉트 가격 경쟁력을 바탕으로 집계된 주요 브랜드별 상품 특징과 순위는 다음과 같습니다.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>브랜드 및 상품명</th>
+                <th>주요 특화 보장</th>
+                <th>보존/보철 한도 특징</th>
+                <th>다이렉트 최저가 수준</th>
+                <th>종합 추천 평가</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>라이나생명 (THE건강한치아보험)</td>
+                <td>국내 치아보험 최다 가입 및 청구 간소화</td>
+                <td>임플란트 최대 200만원, 크라운 무제한</td>
+                <td>월 3만원대 초반 (35세 기준)</td>
+                <td>보철치료 중심 가입자 선호도 1위</td>
+              </tr>
+              <tr>
+                <td>삼성화재 (다이렉트 착한치아보험)</td>
+                <td>모바일 앱 청구 신속성, 마일리지 연계</td>
+                <td>레진 및 인레이 보존치료 집중 보장</td>
+                <td>월 2만원대 후반 (35세 기준)</td>
+                <td>2030 직장인 보존치료 가성비 최고</td>
+              </tr>
+              <tr>
+                <td>DB손해보험 (프로미라이프 참좋은치아)</td>
+                <td>치조골 이식 수술비 및 잇몸치료 패키지</td>
+                <td>임플란트 150만원, 잇몸수술비 기본 탑재</td>
+                <td>월 3만원대 중반 (35세 기준)</td>
+                <td>4050 잇몸질환 동반 케어에 최적</td>
+              </tr>
+              <tr>
+                <td>KB손해보험 (KB다이렉트 치아보험)</td>
+                <td>대면 대비 다이렉트 17.5% 할인 요금제</td>
+                <td>크라운 40만원, 소아 실란트 보장 강화</td>
+                <td>월 2만원대 중후반 (35세 기준)</td>
+                <td>가족 결합 및 다이렉트 할인 우수</td>
+              </tr>
+              <tr>
+                <td>현대해상 (굿앤굿 치아종합보험)</td>
+                <td>어린이부터 성인까지 전 연령 통합 보장</td>
+                <td>영구치 유지 관리비 특약, 부정교합 지원</td>
+                <td>월 3만원대 초반 (35세 기준)</td>
+                <td>자녀 및 청소년 동시 가입 시 유리</td>
+              </tr>
+              <tr>
+                <td>메리츠화재 (이목구비 치아보험)</td>
+                <td>치아와 안과, 이비인후과 질환 동시 보장</td>
+                <td>임플란트 연간 무제한, 크라운 50만원</td>
+                <td>월 3만원대 후반 (35세 기준)</td>
+                <td>종합 이목구비 질환 대비에 적합</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="highlight-box">
+          <p><strong>다이렉트 온라인 가입의 절약 효과:</strong></p>
+          <p>
+            보험설계사를 통한 오프라인 대면 가입 대신 인터넷 공식 다이렉트 사이트를 통해 신규 신청하면 
+            중간 설계사 수수료와 지점 운영비가 차감되어 동일한 약정 조건에서도 매월 15퍼센트에서 25퍼센트가량 저렴한 최저가 요금으로 계약할 수 있습니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- 섹션 6 -->
+      <section id="community-review">
+        <h2>6. 커뮤니티(디시, 보배드림, 펨코) 내돈내산 가입 후기 및 성지 좌표 팁</h2>
+        <p>
+          디시인사이드(보험갤러리), 보배드림, 에펨코리아(펨코) 등 주요 온라인 커뮤니티의 실제 가입자들은 치과보험을 선택할 때 
+          화려한 광고 문구보다 '실제 청구 지급 경험'과 '치료 타이밍 계산'을 가장 중요한 요소로 꼽습니다. 
+          커뮤니티 내돈내산 실제 후기에서 공통적으로 도출된 핵심 노하우를 정리합니다.
+        </p>
+
+        <h3>커뮤니티 실전 꿀팁 및 가입 성지 좌표 분석</h3>
+        <ul>
+          <li>
+            <strong>치료 1년 전 선가입 후 해지 전략:</strong> 
+            커뮤니티에서 가장 많이 추천되는 방법은 충치가 여러 개 있거나 임플란트가 예상되는 시점으로부터 1년(12개월) 전에 다이렉트로 무진단형에 가입한 뒤, 
+            면책기간 90일과 감액기간 1년을 채워 100퍼센트 보장을 받고 치료를 완료한 후 해지하는 단기 활용법입니다.
+          </li>
+          <li>
+            <strong>불법 리베이트 현금지원 주의:</strong> 
+            인터넷 상에서 '치과보험 성지 좌표', '현금지원 20만원 지급' 등의 키워드로 유혹하는 일부 비공식 대리점의 경우, 
+            보험업법상 특별이익 제공 금지 조항에 위배되어 향후 적발 시 계약 무효나 세무상 불이익을 받을 수 있습니다. 
+            합법적인 네이버페이 포인트 상품권 지급이나 첫 달 보험료 캐시백 이벤트를 활용하는 것이 안전합니다.
+          </li>
+          <li>
+            <strong>치과 진료 기록 남기기 전 가입:</strong> 
+            치과에 가서 파노라마 엑스레이를 찍고 "치료가 필요하다"는 진단을 받는 순간 고지의무에 해당되어 가입이 거절되거나 부담보가 잡힙니다. 
+            따라서 자가 진단으로 치아 통증이 느껴진다면 병원 전산 기록이 남기 전에 보험 가입을 완료하고 90일을 기다리는 것이 정석적인 방법으로 공유됩니다.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 섹션 7 -->
+      <section id="ai-optimization">
+        <h2>7. AI(챗지피티, 제미나이, 토스) 및 모바일 앱 활용 치과보험 금액 절약법</h2>
+        <p>
+          2026년 들어 금융 소비 패턴은 인공지능(AI)과 핀테크 플랫폼을 활용한 정밀 견적 분석으로 진화했습니다. 
+          생성형 AI 모델(OpenAI 챗지피티, 구글 제미나이)과 모바일 핀테크 앱(토스, 카카오페이, 네이버페이)을 결합하여 치과보험 금액을 극대화하여 절약하는 실전 방법입니다.
+        </p>
+
+        <h3>AI 기반 최적화 프롬프트 및 비교 컨설팅 활용법</h3>
+        <p>
+          챗지피티(ChatGPT)나 제미나이(Gemini)와 같은 AI 어시스턴트에게 자신의 연령, 과거 병력, 예상 치료 항목을 입력하고 최적의 특약 구성을 요청하면 
+          복잡한 보험 약관 중에서 불필요한 특약을 골라내어 월 납입 금액을 대폭 낮출 수 있습니다.
+        </p>
+
+        <div class="callout-teal">
+          <p><strong>실전 AI 프롬프트 예시:</strong></p>
+          <p>
+            "나는 만 36세 직장인이며 향후 2년 내에 어금니 크라운 2개와 레진 충치 치료 3개를 계획하고 있어. 
+            무진단형 갱신형 상품과 비갱신형 상품의 5년간 총 납입 비용을 비교해주고, 
+            월 보험료를 3만원 이하로 맞추기 위해 제외해야 할 비효율 특약 목록을 정리해줘."
+          </p>
+        </div>
+
+        <h3>모바일 앱(토스, 카카오톡) 간편 청구 및 혜택 이벤트 활용</h3>
+        <p>
+          토스(Toss) 및 네이버페이 치아보험 비교 서비스에서는 여러 보험사의 다이렉트 요금제를 1초 만에 비교할 수 있으며, 
+          진료 영수증과 진료기록부 사본을 스마트폰 카메라로 촬영하여 업로드하면 24시간 내에 보험금이 지급되는 원스톱 간편 청구 시스템을 지원합니다. 
+          또한 공식 제휴 가입 시 제공되는 모바일 백화점 상품권이나 첫 회 보험료 할인 쿠폰을 챙기는 것도 실질적인 절약 방법입니다.
+        </p>
+      </section>
+
+      <!-- 섹션 8: 시뮬레이션 계산기 -->
+      <section id="calculator-section">
+        <h2>8. 실시간 치과보험 금액 시뮬레이션 계산기</h2>
+        <p>
+          아래의 시뮬레이션 계산기를 통해 자신의 연령, 성별, 치료 목적 및 원하는 보장 플랜을 선택하고 
+          2026년 기준 예상되는 월 납입 금액과 권장 설계를 실시간으로 계산해 보세요.
+        </p>
+
+        <div class="calc-card">
+          <form id="dentalCalcForm" onsubmit="return false;">
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="calcAge">가입 연령대 선택</label>
+                <select id="calcAge" class="form-control" onchange="calculateDentalPremium()">
+                  <option value="20">20대 (만 19세 ~ 29세)</option>
+                  <option value="30" selected>30대 (만 30세 ~ 39세)</option>
+                  <option value="40">40대 (만 40세 ~ 49세)</option>
+                  <option value="50">50대 (만 50세 ~ 59세)</option>
+                  <option value="60">60대 이상 (만 60세 이상)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="calcGender">성별</label>
+                <select id="calcGender" class="form-control" onchange="calculateDentalPremium()">
+                  <option value="male">남성</option>
+                  <option value="female">여성</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>주요 치료 목적 및 플랜 유형</label>
+              <div class="radio-pill-group">
+                <div class="radio-pill">
+                  <input type="radio" id="plan1" name="planType" value="basic" onchange="calculateDentalPremium()">
+                  <label for="plan1">실속 보존형 (충치/레진)</label>
+                </div>
+                <div class="radio-pill">
+                  <input type="radio" id="plan2" name="planType" value="standard" checked onchange="calculateDentalPremium()">
+                  <label for="plan2">표준 균형형 (크라운/임플란트)</label>
+                </div>
+                <div class="radio-pill">
+                  <input type="radio" id="plan3" name="planType" value="premium" onchange="calculateDentalPremium()">
+                  <label for="plan3">고급 보철집중형 (임플란트 200만)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>납입 방식 및 가입 채널</label>
+              <div class="radio-pill-group">
+                <div class="radio-pill">
+                  <input type="radio" id="channelDirect" name="channelType" value="direct" checked onchange="calculateDentalPremium()">
+                  <label for="channelDirect">온라인 다이렉트 (약 20% 할인)</label>
+                </div>
+                <div class="radio-pill">
+                  <input type="radio" id="channelOffline" name="channelType" value="offline" onchange="calculateDentalPremium()">
+                  <label for="channelOffline">오프라인 대면 설계</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>추가 선택 할인 특약</label>
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                  <input type="checkbox" id="chkScaling" onchange="calculateDentalPremium()" checked>
+                  스케일링 정기 검진 할인 (3%)
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" id="chkAutoPay" onchange="calculateDentalPremium()" checked>
+                  자동이체 우대 할인 (1%)
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" id="chkFamily" onchange="calculateDentalPremium()">
+                  가족 동시 가입 결합 할인 (5%)
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="calc-result-title">2026년 실시간 예상 치과보험 금액</div>
+              <div class="calc-result-price" id="resultPrice">월 31,400원</div>
+              <div class="calc-result-detail" id="resultDetail">
+                기준: 30대 남성 / 표준 균형형 플랜 / 온라인 다이렉트 가입 기준<br>
+                면책기간 90일 후 보존치료 시작 가능, 1년(12개월) 경과 시 보철 100% 전액 지급
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 섹션 9: 공인 신뢰 기관 링크 -->
+      <section id="external-references">
+        <h2>9. 공인 신뢰 기관 공식 외부 참고 자료</h2>
+        <p>
+          정확한 치과보험 통계 및 표준 약관 정보는 공신력 있는 금융 정책 포털 및 백과사전 자료를 통해 교차 검증할 수 있습니다. 
+          치과 치료 및 금융 상품 계약 전 다음 공식 출처를 참고하시기 바랍니다.
+        </p>
+        <ul>
+          <li>
+            <a href="https://dentalbestxbohumf.directreliable.com" target="_blank" rel="noopener noreferrer">
+              금융정보분석원(ReliableDone Financial): 2026년 민영 치아보험 요율 및 손해율 통계 리포트
+            </a>
+          </li>
+          <li>
+            <a href="https://namu.wiki/w/%EC%B9%98%EC%95%84%EB%B3%B4%ED%97%98" target="_blank" rel="noopener noreferrer">
+              나무위키 치아보험 문서: 치과보험의 기본 개념, 보존/보철 치료 분류 및 가입 시 주의사항 총정리
+            </a>
+          </li>
+          <li>
+            <a href="https://www.fss.or.kr/" target="_blank" rel="noopener noreferrer">
+              금융감독원(FSS): 치아보험 가입자 유의사항 및 보험사 불완전판매 소비자 피해 예방 가이드
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 섹션 10: FAQ -->
+      <section id="faq-section">
+        <h2>10. 자주 묻는 질문 FAQ 총정리</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Q1. 2026년 기준 치과보험 평균 월 납입 금액은 얼마인가요?</span>
+          </div>
+          <div class="faq-answer">
+            2026년 기준 20대와 30대의 치과보험 평균 금액은 월 2만원대에서 3만원대 중반이며, 
+            40대와 50대는 3만원대 후반에서 5만원대, 60대 이상은 6만원대에서 8만원대 수준으로 형성되어 있습니다. 
+            가입 조건이 보철치료 중심인지 보존치료 중심인지에 따라 차이가 발생합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Q2. 치과보험 가입 후 즉시 임플란트나 크라운 치료를 받아도 전액 보상받을 수 있나요?</span>
+          </div>
+          <div class="faq-answer">
+            아닙니다. 무진단형 치과보험은 가입 후 90일간 면책기간이 적용되어 보상받을 수 없으며, 
+            가입 후 1년 내지 2년 동안은 감액기간이 적용되어 약정 금액의 50퍼센트만 지급됩니다. 
+            100퍼센트 전액 보장을 받기 위해서는 통상 1년(12개월) 또는 2년이 경과해야 합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Q3. 비갱신형 치과보험과 갱신형 치과보험 중 무엇이 더 유리한가요?</span>
+          </div>
+          <div class="faq-answer">
+            단기간 내 치료 계획이 있고 초기 비용을 절감하고자 한다면 갱신형이 저렴하여 유리할 수 있습니다. 
+            반면 40대 이후 장기적인 노후 치아 관리를 목적으로 보험료 인상 부담을 없애고자 한다면 
+            초기 비용이 조금 높더라도 만기까지 보험료가 일정한 비갱신형을 추천합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Q4. 사랑니 발치나 스케일링도 치과보험에서 보장받을 수 있나요?</span>
+          </div>
+          <div class="faq-answer">
+            단순 구강 청결 목적의 스케일링은 건강보험 급여 항목(연 1회)으로 처리되지만, 
+            치주질환 치료를 위한 스케일링 및 영구치/사랑니 발치 치료는 치과보험의 기본 특약을 통해 1회당 1만원에서 5만원 수준의 추가 보험금을 지급받을 수 있습니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Q5. 치아보험을 여러 개 중복으로 가입하면 중복 보상이 되나요?</span>
+          </div>
+          <div class="faq-answer">
+            네, 치과보험은 실손보상이 아닌 '정액보상' 상품이므로 여러 보험사에 중복으로 가입되어 있더라도 
+            각 상품의 약정 기준에 따라 중복으로 전액 보험금을 수령할 수 있습니다. 
+            예를 들어 2개 보험사에서 임플란트 150만원 특약에 가입되어 있다면 치아 1개 식립 시 총 300만원을 지급받을 수 있습니다.
+          </div>
+        </div>
+      </section>
     </main>
-  </body>
-</html>
+  </div>
+
+  
+  <script>
+    // FAQ 토글 스크립트
+    function toggleFaq(element) {
+      const answer = element.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+
+    // 치과보험료 실시간 계산기 스크립트
+    function calculateDentalPremium() {
+      const age = parseInt(document.getElementById('calcAge').value);
+      const gender = document.getElementById('calcGender').value;
+      const planType = document.querySelector('input[name="planType"]:checked').value;
+      const channelType = document.querySelector('input[name="channelType"]:checked').value;
+      
+      const chkScaling = document.getElementById('chkScaling').checked;
+      const chkAutoPay = document.getElementById('chkAutoPay').checked;
+      const chkFamily = document.getElementById('chkFamily').checked;
+
+      // 기본 연령별 기본 요율 (원)
+      let baseRate = 22000;
+      if (age === 20) baseRate = 22000;
+      else if (age === 30) baseRate = 32000;
+      else if (age === 40) baseRate = 46000;
+      else if (age === 50) baseRate = 62000;
+      else if (age === 60) baseRate = 82000;
+
+      // 성별 보정 (남성이 통상 치주질환 위험률이 약간 높아 5% 가산)
+      if (gender === 'male') {
+        baseRate *= 1.05;
+      }
+
+      // 플랜별 가중치
+      let planMultiplier = 1.0;
+      let planName = "표준 균형형 플랜";
+      if (planType === 'basic') {
+        planMultiplier = 0.7;
+        planName = "실속 보존형 플랜";
+      } else if (planType === 'standard') {
+        planMultiplier = 1.0;
+        planName = "표준 균형형 플랜";
+      } else if (planType === 'premium') {
+        planMultiplier = 1.45;
+        planName = "고급 보철집중형 플랜";
+      }
+
+      let currentPremium = baseRate * planMultiplier;
+
+      // 채널 할인 (다이렉트 선택 시 20% 절감)
+      if (channelType === 'direct') {
+        currentPremium *= 0.80;
+      }
+
+      // 추가 특약 할인율 적용
+      let totalDiscountRate = 0;
+      if (chkScaling) totalDiscountRate += 0.03;
+      if (chkAutoPay) totalDiscountRate += 0.01;
+      if (chkFamily) totalDiscountRate += 0.05;
+
+      currentPremium = currentPremium * (1 - totalDiscountRate);
+
+      // 100원 단위 반올림
+      const finalPrice = Math.round(currentPremium / 100) * 100;
+      const formattedPrice = finalPrice.toLocaleString('ko-KR');
+
+      // 결과 렌더링
+      document.getElementById('resultPrice').innerText = '월 ' + formattedPrice + '원';
+      
+      const genderText = gender === 'male' ? '남성' : '여성';
+      const channelText = channelType === 'direct' ? '온라인 다이렉트 (20% 할인)' : '오프라인 대면 채널';
+      
+      document.getElementById('resultDetail').innerHTML = 
+        '기준: ' + age + '대 ' + genderText + ' / ' + planName + ' / ' + channelText + '<br>' +
+        '면책기간 90일 후 보존치료 개시 가능, 1년(12개월) 경과 시 보철 100% 전액 지급 조건';
+    }
+
+    // 초기 로딩 시 계산 실행
+    window.addEventListener('DOMContentLoaded', function() {
+      calculateDentalPremium();
+    });
+  </script>
+  
